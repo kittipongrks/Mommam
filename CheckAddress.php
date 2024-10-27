@@ -11,9 +11,9 @@
         $row = $result->fetch_assoc();
         // ตรวจสอบว่า address ถูกกรอกหรือไม่
         if (!empty($row['address'])) {
-            // ถ้ามีที่อยู่ให้เปลี่ยนเส้นทางไปยังหน้าorder
+            // ถ้ามีที่อยู่ให้เปลี่ยนเส้นทางไปยังหน้า checkQuantity
             $_SESSION['address'] = $row['address'];
-            header("Location: submit_order.php");
+            header("Location: CheckQuantity.php");
             exit(); // สิ้นสุดการทำงานของสคริปต์
         } else {
             // ถ้าไม่มีที่อยู่ให้แจ้งเตือนและแสดงฟอร์มให้กรอกที่อยู่
@@ -24,7 +24,7 @@
     } else {
         echo "ไม่พบผู้ใช้ในระบบ";
     }
-    
+
     $stmt->close();
     $conn->close();
 

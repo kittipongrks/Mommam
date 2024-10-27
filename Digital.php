@@ -115,8 +115,15 @@ $_SESSION['PAGE'] = 'Digital.php'
                     echo "<input type='hidden' name='product_id' value='" . $row['product_id'] . "'>";
                     echo "<input type='hidden' name='product_name' value='" . htmlspecialchars($row['product_name']) . "'>";
                     if(!empty($_SESSION['username'])){
-                        echo "<button type='submit' class='btn btn-bottos'>Add</button>";
-                        echo "<input type='hidden' name='price' value='" . htmlspecialchars($row['price']) . "'>";
+                        if($row['stock_quantity']>0){
+                            echo "<button type='submit' class='btn btn-bottos'>Add</button>";
+                            echo "<input type='hidden' name='price' value='" . htmlspecialchars($row['price']) . "'>";
+                        }else{
+                            echo "<button type='button' class='btn btn-bottos' disabled>Add</button>";
+                        echo "<div class='alert alert-danger alert-dismissible fade show'>
+                                <strong>Out of Stock!</strong> สินค้าหมดอดนะจ๊ะ.
+                            </div>";
+                        }
                     }else{
                         echo "<button type='button' class='btn btn-bottos' disabled>Add</button>";
                         echo "<div class='alert alert-danger alert-dismissible fade show'>

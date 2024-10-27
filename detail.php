@@ -128,7 +128,14 @@ if (isset($_GET["product_id"])) {
                     <!-- ปุ่ม Add -->
                     <?php
                     if(!empty($_SESSION['username'])){
-                        echo '<button type="button" class="btn btn-bottos" onclick="addToCart(' . $result['product_id'] . ', \'' . htmlspecialchars($result['product_name']) . '\', ' . htmlspecialchars($result['price']) . ')">Add</button>';
+                        if($result['stock_quantity']>0){
+                            echo '<button type="button" class="btn btn-bottos" onclick="addToCart(' . $result['product_id'] . ', \'' . htmlspecialchars($result['product_name']) . '\', ' . htmlspecialchars($result['price']) . ')">Add</button>';
+                        }else{
+                            echo '<button type="button" class="btn btn-bottos" disabled onclick="addToCart(' . $result['product_id'] . ', \'' . htmlspecialchars($result['product_name']) . '\', ' . htmlspecialchars($result['price']) . ')">Add</button>';
+                        echo "<div class='alert alert-danger alert-dismissible fade show'>
+                                <strong>Out of Stock!</strong> สินค้าหมดอดนะจ๊ะ.
+                                </div>";
+                        }
                     }else{
                         echo '<button type="button" class="btn btn-bottos" disabled onclick="addToCart(' . $result['product_id'] . ', \'' . htmlspecialchars($result['product_name']) . '\', ' . htmlspecialchars($result['price']) . ')">Add</button>';
                         echo "<div class='alert alert-danger alert-dismissible fade show'>

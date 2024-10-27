@@ -43,7 +43,6 @@ try {
     $conn->commit();
     echo "<script> alert('ยืนยันการสั่งซื้อเรียบร้อยแล้ว!'); </script>";
     echo "<script> window.location.href='index.php'; </script>";
-    echo "ยืนยันการสั่งซื้อเรียบร้อยแล้ว!";
 } catch (Exception $e) {
     $conn->rollback();
     echo "เกิดข้อผิดพลาด: " . $e->getMessage();
