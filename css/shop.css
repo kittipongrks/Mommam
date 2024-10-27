@@ -1,0 +1,37 @@
+/* จัดเรียงสินค้าบนหน้ากระดาษ */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* กำหนดให้แสดงเป็นคอลัมน์แบบพอดี */
+    gap: 20px; /* ระยะห่างระหว่างการ์ดสินค้า */
+    padding: 20px; /* เพิ่มระยะห่างขอบนอกเพื่อความสมดุล */
+}
+
+/* กำหนดการ์ดสินค้า */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+/* กำหนดขนาดรูปภาพให้เต็มกรอบของการ์ดสินค้า */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* เพิ่มความโค้งมนของขอบรูปภาพ */
+}
+
+/* สำหรับขนาดข้อความ */
+.product-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}

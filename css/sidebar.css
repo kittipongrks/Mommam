@@ -1,0 +1,21 @@
+
+.menu-sidebar__content a{
+  text-decoration: none;
+}
+.navbar-mobile__list a{
+  text-decoration: none;
+}
+.navbar__list li:hover{
+  background-color: rgb(63, 151, 205) ;
+  transition: 0.5s;
+  border-radius: 10px;
+  color : white;
+}
+.navbar__list a:hover{
+  transform:translateX(30px);
+  color : white;
+}
+.navbar__list li{
+  transition: 0.5s;
+  border-radius: 10px;
+}

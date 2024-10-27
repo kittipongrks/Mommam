@@ -1,0 +1,99 @@
+body {
+    background-color: #fef7d5;
+    /* Soft yellow background */
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: #fff3f3;
+    /* Pink header */
+    color: #343a40;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-danger {
+    background-color: #f8c3d7;
+    /* Soft pink for delete button */
+    color: #343a40;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #f497b6;
+}
+
+.btn-primary {
+    background-color: #f497b6;
+    /* Pink for primary action button */
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #f8c3d7;
+}
+
+.total-price {
+    font-weight: bold;
+    color: #e67e22;
+    /* Orange color for total price */
+    font-size: 1.2rem;
+}
+
+.link-back {
+    color: #f497b6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-back:hover {
+    color: #f8c3d7;
+}
+.comback{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background-color: #ff68b9;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: #3498db;
+    transition: all 0.3s;
+
+}
+
+.comback:hover {
+    background-color: #f8c3d7;
+    box-shadow: #3498db;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.comback:active {
+    transform: translateY(1px);
+    box-shadow: #3498db;
+}
