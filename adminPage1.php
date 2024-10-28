@@ -44,7 +44,8 @@
     if ($_SESSION['role'] === 'ADMIN'){
 
     }else{
-        $_SESSION['error'] = "this page can only use by admin";
+        array_push($errors, "!!!this page can only use by admin");
+        $_SESSION['error'] = "!!!this page can only use by admin";
         header('location: login.php');
     }
 ?>
