@@ -10,7 +10,7 @@
 </head>
 <body>
   <?php 
-  if ($_SESSION['role'] === 'ADMIN'){
+  if ($_SESSION['role'] = 'ADMIN'){
 
   }else{
       array_push($errors, "!!!this page can only use by admin");
