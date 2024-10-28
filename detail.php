@@ -199,6 +199,7 @@ if (isset($_GET["product_id"])) {
                     <li><a href="canvas.php">Canvas</a></li>
                     <li><a href="Digital.php">Digital</a></li>
                     <li><a href="about.php">About</a></li>
+                    <li class="mb-2"><a href="https://www.instagram.com/beombaedy.studio?igsh=cWF3YW5vZmR6MmNk">ช่องการการติดตาม<i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

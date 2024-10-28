@@ -41,7 +41,12 @@
       $sql_orders = "SELECT * FROM orders ORDER BY order_id DESC"  ;
       $result_orders = mysqli_query($conn , $sql_orders);
 
+    if ($_SESSION['role'] === 'ADMIN'){
 
+    }else{
+        $_SESSION['error'] = "this page can only use by admin";
+        header('location: login.php');
+    }
 ?>
 
 <!-- class="toggle-btn" สำหรับเปิดปิด sidebar-->
