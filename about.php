@@ -19,6 +19,7 @@ $_SESSION['PAGE'] = 'canvas.php'
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="css/team.css">
+    <script src="https://kit.fontawesome.com/5368a84f0e.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -123,7 +124,7 @@ $_SESSION['PAGE'] = 'canvas.php'
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">About MomMam</h3>
-                    <li class="mb-2"><a href="https://www.instagram.com/beombaedy.studio?igsh=cWF3YW5vZmR6MmNk"><i class="fab fa-instagram"></i></a></li>
+                    <li class="mb-2"><a href="https://www.instagram.com/beombaedy.studio?igsh=cWF3YW5vZmR6MmNk">ช่องทางการติดตาม : <i class="fab fa-instagram"></i></a></li>
                     <p>เป็นเว็บไซต์ที่สร้างขึ้นเพื่อ รวบรวมผลงานศิลปะของเพื่อนรัก "ปอวชิ" ที่อยากจะอวดให้ทุกคนได้เห็นและสนับสนุนผลงานศิลปะที่สวยงามและน่ารัก >3
                     </p>
                 </div>
@@ -134,7 +135,6 @@ $_SESSION['PAGE'] = 'canvas.php'
                         <li><a href="canvas.php">Canvas</a></li>
                         <li><a href="videos.php">Digital</a></li>
                         <li><a href="about.php">About</a></li>
-                        <li class="mb-2"><a href="https://www.instagram.com/beombaedy.studio?igsh=cWF3YW5vZmR6MmNk">ช่องการการติดตาม<i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
