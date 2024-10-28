@@ -10,6 +10,13 @@
 </head>
 <body>
   <?php 
+  if ($_SESSION['role'] === 'ADMIN'){
+
+  }else{
+      array_push($errors, "!!!this page can only use by admin");
+      $_SESSION['error'] = "!!!this page can only use by admin";
+      header('location: login.php');
+  }
    ini_set('display_errors', 1);
    error_reporting(~0);
    if(isset($_GET["order_id"]))

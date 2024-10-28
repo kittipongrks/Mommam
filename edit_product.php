@@ -10,6 +10,13 @@
 </head>
 <body>
   <?php 
+  if ($_SESSION['role'] === 'ADMIN'){
+
+  }else{
+      array_push($errors, "!!!this page can only use by admin");
+      $_SESSION['error'] = "!!!this page can only use by admin";
+      header('location: login.php');
+  }
    ini_set('display_errors', 1);
    error_reporting(~0);
    if(isset($_GET["product_id"]))
@@ -20,6 +27,7 @@
    $sql = "SELECT * FROM products WHERE product_id = '".$product_id."' ";
    $query = mysqli_query($conn , $sql);
    $result=mysqli_fetch_array($query,MYSQLI_ASSOC);
+
 
   ?>
   <!-- Edit product Modal Start -->           
